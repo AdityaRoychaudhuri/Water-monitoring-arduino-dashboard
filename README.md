@@ -29,7 +29,6 @@ A real-time water quality monitoring dashboard built using the **MERN Stack (Mon
 - React.js
 - Redux Toolkit Query (RTK Query)
 - Nivo Charts (for graphs)
-- Tailwind CSS (or your preferred CSS framework)
 
 ### 🔗 Backend
 - Node.js
