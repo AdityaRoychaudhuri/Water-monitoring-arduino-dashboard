@@ -40,4 +40,3 @@ A real-time water quality monitoring dashboard built using the **MERN Stack (Mon
 
 ---
 
-## 📁 Folder Structure
