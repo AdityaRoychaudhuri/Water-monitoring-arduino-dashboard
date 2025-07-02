@@ -25,7 +25,7 @@ A real-time water quality monitoring dashboard built using the **MERN Stack (Mon
 
 ## 🛠️ Tech Stack
 
-### 🔗 Frontend
+### 🔗 [Frontend](https://github.com/AdityaRoychaudhuri/Water-monitoring-arduino-dashboard/tree/main/client)
 - React.js
 - Redux Toolkit Query (RTK Query)
 - Nivo Charts (for graphs)
