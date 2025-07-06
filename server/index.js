@@ -18,15 +18,19 @@ app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }))
 app.use(morgan("common"))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(cors());
+app.use(cors({
+    origin: "https://smartdrops-5fe9.onrender.com",
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
+}));
 
 // Routes
 app.use("/api", SensorData)
 
 const port = process.env.PORT || 5001;
+
 mongoose.connect(process.env.MONGO_URL)
 .then(() => {
     app.listen(port, () => console.log(`Listening at port ${port}`))
-
 })
 .catch((err) => console.log(`Cannot connect to mongo due to ${err}`))

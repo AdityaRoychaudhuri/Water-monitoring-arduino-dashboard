@@ -5,6 +5,9 @@ import { useEffect, useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import FlexBetween from './FlexBetween'
 import profileImage from "../assets/profile.jpeg"
+import logo1 from "../assets/logo1.jpg"
+import logo2 from "../assets/logo2.jpg"
+import logo3 from "../assets/logo3.jpg"
 import BarChartSharpIcon from '@mui/icons-material/BarChartSharp';
 import TimelineSharpIcon from '@mui/icons-material/TimelineSharp';
 import AssessmentSharpIcon from '@mui/icons-material/AssessmentSharp';
@@ -77,12 +80,19 @@ function Sidebar({
             scrollbarWidth: "none",
             msOverflowStyle: "none",
             }}>
-            <Box m="1.5rem 2rem 2rem 3rem">
-              <FlexBetween color={theme.palette.secondary.main}>
+            <Box m="1rem 2rem 1rem 3rem">
+              <FlexBetween color={theme.palette.secondary.main} paddingLeft="30px">
                 <Box display="flex" alignItems="center" gap="0.5rem">
-                  <Typography variant="h4" fontWeight="bold">
-                    myLogo
-                  </Typography>
+                  <Box
+                    component="img"
+                    alt='logo'
+                    src={logo3}
+                    height="70px"
+                    width="70px"
+                    borderColor="white"
+                    sx={{ objectFit: "contain", border: "1.8px solid", color: "#fefcfd", borderRadius: "50%"}}
+                  >
+                  </Box>
                 </Box>
                 {!isNonMobile && (
                   <IconButton onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
